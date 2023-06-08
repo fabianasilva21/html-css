@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coracaofavicon.ico" type="image/x-icon">
+    <title>EXERCÍCIOS8_9</title>
+</head>
+<body>
+    <style>
+        body {
+            color: rgb(218, 213, 213);
+            font-size: 18px;
+            background-color: rgb(33, 58, 82);
+        }
+    </style>
+    <h1>Aula 8: Principais Formatações/Formatações adicionais em HTML/Citações e Códigos </h1>
+    <hr>
+    <h2>Negrito/Destaque</h2>
+    <!--Ou poderia abrir um seletor style e dentro dele escrever MARK para mudar a cor de todos os MARK da pg, se tivesse muitos-->
+    <p><mark style="background-color: darkgoldenrod;">Nesta frase temos um</mark> <b>termo em negrito</b> usando a tag B
+        (não semântica, ñ tem significado apenas deixa as palavras escuras)</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong>
+        usando a tag STRONG (semântica, além de mudar a palavra dá enfase nela)</p>
+    <hr>
+    <h2>Itálico/Ênfase</h2>
+    <p>Temos aqui o <i>termo em itálico</i> usando a tag I (não semântica).
+    <p><small>Texto pequeno</small></p>
+    <em>Temos também um termo em ênfase usando a tag EM (semântica)</em></p>
+    <p><del>Texto a se desconsiderar</del></p>
+    <p><ins>Texto sublinhado</ins></p>
+    <p><u>Tem como sublinhar o texto com tag U (mas ñ é semântica)</u></p>
+    <!--Evitar usar as TAGS <B> e <I>-->
+    <hr>
+    <h2>Citações e Códigos</h2>
+    <p>O comando <code>document.getElementaryById('teste')</code> é escrito
+        em linguagem JavaScript
+    </p>
+    <pre>
+        <code>
+        <!--Se selecionar o texto todo e clicar nas  teclas SHIFT+TAB faz o texto abaixo
+         ficar grudado ou mais perto da borda, e se quiser fazer ele ir para frente
+        seleciona apenas o texto e clica na tecla TAB-->
+        num = int(input('Digite um número'))
+        if num % 2 == 0;
+
+            print(f 'O número {num} é PAR')
+        else:
+
+            print(f 'O número {num} é IMPAR')
+        print('Fim do programa')
+         <!--E para pular linha dentro da tag PRE ñ precisa colocar a tag <br>,
+        basta pular linha-->
+        <hr>
+        </code>
+    </pre>
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: O computador é um burro muito rápido</p>
+    <h2>Citações Completas</h2>
+    <p>Já dizia o apresentador Fausto Silva, mais conhecido como Faustão:</p>
+    <blockquote>
+        <!--E se quiser depois da palavra BLOCKQUOTE pode colocar a palavra "CITE=E o link de onde tirou a citação"-->
+        O louco meu!
+    </blockquote>
+    <hr>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
+            title="Cascading Style Sheets">CSS</abbr></p>
+    <h2>Texto INvertido</h2>
+    <!--Se quiser digitar dentro da tag bdo dir="ltr", volta o texto ao normal-->
+    <p><bdo dir="rtl">Inverte o texto</bdo></p>
+</html>
+</body>

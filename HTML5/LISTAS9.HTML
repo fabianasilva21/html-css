@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coracaofavicon.ico" type="image/x-icon">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <style>
+        body {
+            color: rgb(2, 0, 0);
+            font-size: 18px;
+            background-color: cadetblue;
+        }
+    </style>
+    <h1>Listas OL e UL</h1>
+    <hr>
+    <h2>Listas Ordenadas</h2>
+    <!--Se quiser começar a lista a partir de outro número que ñ seja o
+    1 basta digitar o número dentro de start, ou se quiser
+    que seja numero romano colocar a letra I/i-->
+
+    <ol type="1" start="2" ><!--Se quiser colocar números romanos bastar digitar
+    apenas "<ol type="I">-->
+        <li>Acordar</li> <!--O /li ñ é mais obrigatório colocar a partir do HTML5-->
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square"><!--Esse é o padrão 'disk', mas tbm tem as opções circle e square-->
+        <li>Doces</li>
+        <li>Salgados</li>
+        <li>Sucos Naturais</li>
+    </ul>
+    <hr>
+    <h2>Parte 2: Listas mistas e de definição</h2>
+    <h2>Linguagens de prgramação Antigas e Novas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>Jogos de Escolha</li>
+        <ul type="square">
+            <li>Call of the Sea</li>
+            <li>The Silent Age</li>
+            <li>Linda Brown</li>
+        </ul>
+        <li>Jogos de Ação</li>
+        <ol>
+            <li>Gta</li>
+            <li>FreeFire</li>
+        </ol>
+        <li>Jogos Aleatórios</li>
+        <ul>
+            <li>8 Ball Poll</li>
+            <ul>
+                <li>Jogo Gratuito</li>
+            </ul>
+            <li>Agent A: O enigma desfarçado</li>
+            <ul>
+                <li>Jogo Pago (mas é barato)</li>
+            </ul>
+            <li>CodyCross: Palavras Cruzadas</li>
+            <ul>
+                <li>Jogo Gratuito</li>
+            </ul>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt><mark>HTML</mark></dt>
+        <dd>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.</dd>
+        <dt><mark>Cascading Style Sheets</mark></dt>
+        <dd>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.</dd>
+        <dt><mark>JavaScript</mark></dt>
+        <dd>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web</dd>
+    </dl>
+</body>
+</html>

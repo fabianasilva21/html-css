@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas na prática (pt.1)</title>
+    <style>
+        h1 { /*box-level*/
+            /*display: inline;Transforma uma box-level em inline*/
+            background-color: rgb(128, 219, 189);
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            background-color: darkgray;
+            Todas essas linhas podem ser substituidas
+            por uma unica linha basta seguir essa ordem:
+            */
+            border: 10px solid rgb(0, 112, 112);
+
+            /*O padding é da borda pra dentro*/
+            /*E se as 4 medidas tiverem o mesmo valor,
+            basta colocar o valor apenas 1 vez*/
+            /*E se colocar 2 medidas a primeira serve pra part de cima e debaixo
+            e a 2 medida swerve pra direita e esquerda*/
+            padding: 10px 20px;
+
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed crimson;
+        }
+        a {/*Inline-level*/
+            /*display: block;Transforma uma caixa inline-level em box-level*/
+            /*display: inline-block;Vai continuar sendo inline mas com caracteristicas de block*/
+            border-width: 3px;
+            border-style: dashed;
+            border-color: rgb(255, 153, 81);
+
+            padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level,
+    mas<a href="#"> os links são exemplos de caixas inline-level</a>. Vamos ver como td isso funciona
+    </p>
+    <p><mark>Margin:auto;</mark> Se for uma caixa usar essa tag, para centralizar a caixa no meio da tela</p>
+    <p>Usar a tag <mark>text-align:;</mark>Se for para centralizar um texto na tela</p>
+    
+</body>
+</html>

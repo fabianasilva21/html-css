@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coracaofavicon.ico" type="image/x-icon">
+    <title>Usando fontes externas baixadas</title>
+    <style>
+        @font-face { /*Essa tag tem que ficar no começo do CSS*/
+            font-family: 'fonts';
+            /*Para digitar mais de uma fonte escrever isso na tag abaixo: url('FONTS/aAttackGraffiti.otf') format('opentype'), url('FONTS/aAttackGraffiti.ttf')*/
+            src: url(FONTS/White\ On\ Black.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*Tipos de format
+            -oppntype (otf)
+            -truetype (ttf)
+            -embedded-oppetype
+            -truetype-aat (aplle advenced
+            typegraphy
+            -svg*/
+        }
+        body {
+            font-family: 'arial';
+            font-size: 16px;
+            font-weight: normal;
+            background-image:linear-gradient(to right, #03dfc1, #1d800a, #369e44, #41acc4, #3f95a7);
+        }
+        h1, h2 {
+            font-family: 'fonts';
+            font-weight: normal; /*Para o texto ficar escrito sem negrito*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando fontes externas baixadas</h1>
+    <ul>
+        <li><a href="https://fonts.google.com/" target="_blank">fonts.google.com</a></li>
+        <li><a href="http://www.dafont.com/pt/" target="_blank">dafont.com/pt</a></li>
+    </ul>
+    <h2>Como descobrir qual e a fonte de um site?</h2>
+    <p>Usando a extensão no Chrome chamada:<ins>Fonts Ninja</ins></p>
+    <h2>Detectando fontes dentro de imagens</h2>
+    <ul>
+        <li><a href="http://www.whatfontis.com/" target="_blank">whatfontis.com</a></li>
+        <li><a href="http://www.myfonts.com/" target="_blank">myfonts.com</a></li>
+        <li><a href="http://www.fontsquirrel.com/" target="_blank">fontsquirrel.com/</a></li>
+    </ul>
+</body>
+</html>

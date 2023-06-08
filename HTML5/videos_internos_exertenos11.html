@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            color: beige;
+            background-color: blueviolet;
+        }
+    </style>
+    <h1>Vídeos em hospedagem própria</h1>
+    <p>Este vídeo esta hospedado no meu servidor</p>
+    <!--
+    <video src="C:\Users\bened\Downloads\pexels-koolshooters-7683653-960x540-25fps.mp4" width="500" controls></video>
+    -->
+    <!--A tag "poster" serve para colocar uma capa no video-->
+    <video width="500" poster="luludapomerania.png" controls autoplay loop>
+        <source src="C:\Users\bened\Downloads\pexels-koolshooters-7683653-960x540-25fps.mp4" type="video/mp4">
+        <source src="C:\Users\bened\Downloads\pexels-koolshooters-7683653-960x540-25fps.m4v" type="video/mp4">
+        <source src="C:\Users\bened\Downloads\pexels-koolshooters-7683653-960x540-25fps.webm" type="video/webm">
+        <source src="C:\Users\bened\Downloads\pexels-koolshooters-7683653-960x540-25fps.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução
+            de vídeos.
+        </p>
+    </video>
+    <!--É melhor colocar no site videos externos como dos sites YouTube ou Vimeo-->
+    <h1>Incorporação de vídeos externos</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P7Cz2IPe5J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

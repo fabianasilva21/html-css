@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a { /*Serve para mudar a cor de um link que ainda ñ foi clicado*/
+            color: rgb(0, 139, 93);
+            text-decoration: none; /*Tira o sublinhado que fica embaixo do texto*/
+            font-weight: bolder;
+        }
+        a:visited { /*Serve para mudar a cor de um link que foi visitado*/
+            color: darkgoldenrod;
+        }
+        a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;/*Faz o texto ficar sublinhado só quando passa o mouse em cima*/
+        }
+        a:active { /*Muda a cor do link enquanto segura o mouse nele*/
+            color: chartreuse;
+        }
+        .especial {
+            background-color: rgb(241, 205, 113);
+        }
+        .especial:before {
+            content: '↪';
+        }
+        .especial:after {
+            content: '↩';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+            <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" class="especial">Material de apoio em PDF no GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo/videos" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/login/" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+    <p><mark>Pseudo-classes</mark> são palavras que definem estados de elementos dentro do HTML</p>
+    <p><strong>Simbologias importantes para criar Seletores Personalizados</strong></p>
+    <pre>
+        # = id
+        . = class
+        ; = pseudo-classe
+        :: = pseudo-element
+        > = children
+    </pre>
+</body>
+</html>

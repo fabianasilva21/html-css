@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\bened\OneDrive\Área de Trabalho\@Curso em VídeoHTML5eCSS3\HTML-CSS\EXERCICIOS\exercicio11\coracaofavicon.ico" type="image/x-icon">
+    <title>Exercicios 11 e 12</title>
+</head>
+<body>
+    <style>
+         body {
+            color: rgb(207, 201, 201);
+            font-size: 18px;
+            background-color: rgb(9, 35, 65);
+        }
+    </style>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em várias dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+    <!--Sempre colocar a imagem grande como base e
+    quanto menor forem as outras fotos colocar elas em cima no código-->
+        <source media="(max-width: 750px)" srcset="IMAGENS/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="IMAGENS/media.png"
+        type="image/png">
+        <img src="IMAGENS/grande.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a reproduzir áudio em HTML5</p>
+    <!--Uma das maneiras de colocar audio em HTML5
+    <audio src="C:\Users\bened\Videos\Ariana Grande - no tears left to cry(MP3_70K).mp3" controls autoplay></audio>
+    -->
+    <!--Outra maneira de colocar audio no site-->
+    <audio preload="metadata" autoplay controls loop> <!--Se colocar a palavra LOOP faz com que o áudio reinicie sozinho-->
+        <source src="C:\Users\bened\Videos\Ariana Grande - no tears left to cry(MP3_70K).mp3" type="audio/mpeg">
+        <source src="C:\Users\bened\Videos\Ariana Grande - no tears left to cry(MP3_70K).ogg" type="audio/ogg">
+        <source src="C:\Users\bened\Videos\Ariana Grande - no tears left to cry(MP3_70K).wav" type="audio/wav"> <!--Ñ usar esse arquivo pq é muito pesado-->
+        <p>Infelizmente o navegador ñ consegue reproduzir áudio.<a href="C:\Users\bened\Videos\Ariana Grande - no tears left to cry(MP3_70K).mp3">
+        Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
